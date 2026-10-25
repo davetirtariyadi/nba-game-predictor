@@ -31,3 +31,22 @@ There are five games that are included in the regular season, but not played in 
 - 2024-11-02, MIA against WAS, in Mexico
 
 So all five are neutral-site games: neither team really had home court. If home-court advantage is a factor, I would keep these games but call them "neutral."
+
+## Reshape Game Data
+
+Right now, each game appears twice, once from each team’s point of view. A model needs one row per game with one answer to predict. 
+
+In this one-row-per-game table, I need to keep:
+- Game ID and Game Date
+- Which team is home, which team is away
+- What is home team points, what is away team points
+- If a game is treated "neutral"
+
+We find the following:
+- Home team won 54% of games - lower than my initial guess of 60%.
+- On average, the home team scores 1.7 points more than the away team.
+- The top three teams with the best home record are OKC, CLE, and LAL with win percentages of 85%, 83%, and 76%
+- The bottom three teams with the worst home record are WAS, UTA, and CHA with win percentages of 20%, 24%, and 29%
+- If we predicted "home team wins" for every game, we would only be 54% accurate: just slightly better than flipping a coin. This is our baseline.
+
+Interesting thought: OKC ended up winning the Chip, is it because of their home court performance, or just because they're a good team? To tell what is what, we would need to compare home-win % and away-win%. I would expect a good team to have similar home-win and away-win percentages.
