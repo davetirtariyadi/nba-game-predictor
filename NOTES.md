@@ -50,3 +50,15 @@ We find the following:
 - If we predicted "home team wins" for every game, we would only be 54% accurate: just slightly better than flipping a coin. This is our baseline.
 
 Interesting thought: OKC ended up winning the Chip, is it because of their home court performance, or just because they're a good team? To tell what is what, we would need to compare home-win % and away-win%. I would expect a good team to have similar home-win and away-win percentages.
+
+## Other Methods
+
+| Method | Accuracy |
+|---|---|
+| Always pick home team | 54% |
+| Better record (full season) | 70% |
+| Better record (games before only) | ? |
+
+Note: the issue with the full-season record method is that it's data leakage: we're making a prediction using data we wouldn't have access to.
+
+
