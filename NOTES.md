@@ -51,7 +51,7 @@ We find the following:
 
 Interesting thought: OKC ended up winning the Chip, is it because of their home court performance, or just because they're a good team? To tell what is what, we would need to compare home-win % and away-win%. I would expect a good team to have similar home-win and away-win percentages.
 
-## Other Methods
+## Other Methods of Prediction - Win-Loss Record
 
 | Method | Accuracy |
 |---|---|
@@ -62,5 +62,7 @@ Interesting thought: OKC ended up winning the Chip, is it because of their home 
 Note: the issue with the full-season record method is that it's data leakage: we're making a prediction using data we wouldn't have access to.
 
 If we were making real-time predictions, I would trust the rolling win-loss record more because it's based data we have.
+
+Interesting result: predicting with the rolling win-loss resulted in accuracy of 60.2% in the first-half of the regular season and 67.8% in the second-half of the regular season. This is from sample size: early in the season, we're averaging over a small sample size. As more games are played, win % gets closer to a team’s real strength, so the predictions improve.
 
 
