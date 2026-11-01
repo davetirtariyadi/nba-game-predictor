@@ -57,8 +57,10 @@ Interesting thought: OKC ended up winning the Chip, is it because of their home 
 |---|---|
 | Always pick home team | 54% |
 | Better record (full season) | 70% |
-| Better record (games before only) | ? |
+| Better record (games before only) | 64% |
 
 Note: the issue with the full-season record method is that it's data leakage: we're making a prediction using data we wouldn't have access to.
+
+If we were making real-time predictions, I would trust the rolling win-loss record more because it's based data we have.
 
 
